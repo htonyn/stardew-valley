@@ -1,0 +1,445 @@
+html, body {
+    top: 45px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url("../res/bg4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: defaultFont;
+    overflow: hidden;
+}
+iframe {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 45px;
+}
+.vert-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #444;
+}
+.changelog-list {
+    background-color: none;
+}
+li a {
+    display: block;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #333;
+}
+ul li ul {
+    display: none;
+}
+ul li ul li a {
+    margin-left: 25px;
+}
+ul li:click ul {
+    display: block;
+}
+@font-face {
+    font-family: defaultFont;
+    src: url(../res/MyriadPro-Reg.ttf);
+}
+#navContainer {
+    overflow: hidden;
+    top: 45px;
+    width: 198px;
+    height: 100%;
+    position: fixed;
+}
+#navMenu {
+    background-color: #444;
+    height: calc(100% - 45px);
+    margin: 0;
+    width: 219px;
+    padding: 0;
+    position: relative;
+    overflow-y: scroll;
+}
+#right {
+    left: 200px;
+    right: 0px;
+    top: 45px;
+    float: right;
+    height: calc(100% - 45px);
+    width: calc(100% - 200px);
+    position: fixed;
+}
+
+#logo {
+    display: block;
+    margin: auto;
+}
+.imageLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#quote {
+    text-align: center;
+}
+.center {
+    text-align: center;
+}
+#center {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+#main-page {
+    overflow: auto;
+    position: absolute;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    left: 4%;
+    right: 4%;
+    padding: 20px;
+    width: auto;
+    height: 60%;
+    background: #333;
+    background-color: #FABC73;
+    outline-style: ridge;
+    outline-color: #9B4A0F;
+    outline-width: 5px;
+    color: #541100;   
+}
+.seasons {
+    overflow: auto;
+    position: absolute;
+    padding: 20px;
+    top: 5%;
+    left: 4%;
+    right: 4%;
+    bottom: 5%;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: #333;
+    background-color: #FABC73;
+    outline-style: ridge;
+    outline-color: #9B4A0F;
+    outline-width: 5px;
+    color: #541100;
+    display: none;
+}
+.achievement {
+    overflow: auto;
+    position: absolute;
+    padding: 20px;
+    top: 5%;
+    left: 2%;
+    right: 2%;
+    bottom: 5%;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: #333;
+    background-color: #FABC73;
+    outline-style: ridge;
+    outline-color: #9B4A0F;
+    outline-width: 5px;
+    color: #541100;
+    display: none;
+}
+#weather {
+    min-height: 100%;
+    width: 100%;
+    right: 0px;
+    display: none;
+    position: absolute;
+    background-image: url("../res/spring-cherry-blossoms.gif");
+    background-size: 50%;
+}
+
+.achievement-frame {
+    height: auto;
+    padding: 5px;
+    width: 100%;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+
+.achievement-icon-frame, .justify-setup {
+    height: 128px;
+    width: 300px;
+    background-color: #C37A47;
+    border-radius: 10px;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    margin-bottom: 5px;
+}
+
+.justify-setup {
+    height: auto;
+    width: auto;
+}
+
+.gap {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+.achievement-icon {
+    width: 64px;
+    height: 64px;        
+    float: left;
+}
+.achievement-name {
+    height: 32px;
+    width: 236px;
+    float: right;
+    text-align: center;
+    font-size: 16pt;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.achievement-desc {
+    width: 296px;
+    height: 60px;
+    float: bottom;
+    text-align: left;
+    padding: 2px;
+    bottom: 0px;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+#shipping-grid {
+    width: 100%;
+}
+
+#crafting-grid {
+    width: 100%;
+}
+.half-grid {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+.half-grid-2 {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.grid-row {
+    text-align: center;
+}
+.grid-icon {
+    background-color: #C37A47;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.grid-icon-pic {
+    margin: 0;
+    text-align: center;
+    line-height: 0;
+    font-size: 0;
+}
+.grid-icon-pic img {
+    width: 64px;
+    height: 64px;
+    margin: 0;
+}
+.grid-icon-pic img.tall-craft {
+    width: 64px;
+    height: 128px;
+    background-color: #C37A47;
+}
+
+.grid-information {
+    display: none;
+    width: auto;
+    height: auto;
+}
+
+#pup {
+    background-color: #C37A47;
+    color: #541100;
+    padding: 2px;
+    outline-style: ridge;
+    outline-color: #9B4A0F;
+    outline-width: 5px;
+}
+
+.polyculture {
+    background-color: #9370DB;
+}
+.fishing {
+    background-color: #55B7FF;
+    /*background-color: #0080ff;*/
+}
+h1, h2, h3 {
+    margin: 0;
+}
+.half-grid-craft {
+    display: grid;
+    width: 658px;
+    grid-gap: 2px;
+    grid-template-columns: repeat(10, 64px);
+    grid-template-rows: repeat(4, 64px);
+}
+.half-grid-craft div a img {
+    background-color: #C37A47;
+    height: 64px;
+    width: 64px;
+}
+.half-grid-craft div a img.tall-craft {
+    background-color: #C37A47;
+    height: 130px;
+    width: 64px;
+}
+hr{
+	background-color: transparent;
+	height: 0;
+	border: none;
+	border-bottom: 1px solid rgba(255,255,255,0.08);
+	border-top: 1px solid #9B4A0F;
+	margin: 0;
+	clear: both;
+}
+.tabs-container {
+    width: 100%;
+}
+.list-tab {
+    list-style-type: none;
+    overflow: hidden;
+    background-color:#C37A47;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.list-tab li {
+    float: left;
+}
+.list-tab li a {
+    display: block;
+    font-family: defaultFont;
+    color: #541100;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.list-tab li a:hover {
+    background-color: #9B4A0F;
+}
+.relation-container {
+    width: 100%;
+}
+.tab-rel {
+    width: 100%;
+    background-color:#C37A47;
+    display: inline-block;
+}
+.tab-rel-left {
+    width: 20%;
+    min-height: 128px;
+}
+.tab-rel-right {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(20% 10px, fr);
+    grid-template-rows: 30px auto;
+}
+.rel-title {
+    float: left;
+}
+
+.rel-pref {
+    background-color: #FABC73;
+    border: 2px solid #9B4A0F;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+#column-image {
+    display: none;
+}
+#column-content {
+    width: 80%;
+}
+@media screen and (min-width: 1000px) {
+    #column-image {
+        display: inline;
+    }
+    #column-content {
+        width: 50%;
+    }
+}
+
+.expand-title {
+    color: white;
+    display: block;
+    list-style-type: none;
+    font-size: 3em;
+}
+
+.expand-title a {    
+    text-decoration: none;
+    color: #541100;
+}
+
+.expand-content {
+    display: none;
+    height: auto;
+}
+
+.season-farm-content {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #541100;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    height: 74px;
+    background-color: #C37A47;
+    width: 500px;
+    float: left;
+}
+.season-farm-item-image {
+    float: left;
+    margin-right: 2px;
+}
+.season-farm-item-name {
+    height: 32px;
+    font-size: 2em;
+}
+.season-farm-item-desc {
+    height: 32px;
+    font-size: 1em;
+}
+.table-border, .table-border th, .table-border td {
+    border: 1px solid #9B4A0F;
+    margin: 0 auto;
+}
+
+.table-border tr:nth-child(even) {
+    background-color: #C37A47;
+}
+
+.mCS-content-scroll.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ background-color: #541100; }
+.mCS-content-scroll.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-content-scroll.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: #541100; }
+.mCS-content-scroll.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{ background-color: #541100; }
+.mCS-content-scroll.mCSB_scrollTools .mCSB_draggerRail{ background-color: #9B4A0F; }
+
