@@ -23,6 +23,7 @@ function tabSwap(tabName, contentSet) {
             $('#weather').css("background-image", 'url(res/snow-fall-2.gif)');
             break;
         default:
+            $('#weather').hide();
             break;
     }
 }
